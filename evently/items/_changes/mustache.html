@@ -1,5 +1,4 @@
-<p>Customize this format here: <tt>ddoc.evently.items._changes.mustache</tt></p>
-<h3>Recent Messages</h3>
+<h3>Recent Photos</h3>
 <ul>
   {{#items}}
     <li>
@@ -10,6 +9,10 @@
         </div>
       </div>
       <p>{{message}}</p>
+			{{#atts}}
+				<p>{{name}}</p>
+				<img class="attachment" src="{{path}}">
+			{{/atts}}
       <div style="clear:left;"></div>
     </li>
   {{/items}}
