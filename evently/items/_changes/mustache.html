@@ -1,4 +1,4 @@
-<h3>Recent Photos</h3>
+<h2>Recent Photos</h2>
 <ul>
   {{#items}}
     <li>
@@ -11,11 +11,9 @@
       <p>{{message}}</p>
 			{{#atts}}
 				<p>{{name}}</p>
-				<img class="attachment" src="{{path}}">
+				<div class="attachment"><img src="{{path}}"></div>
 			{{/atts}}
       <div style="clear:left;"></div>
     </li>
   {{/items}}
 </ul>
-<p><em>Protip:</em> If you setup continuous replication between this database and a remote one, this list will reflect remote changes in near real-time.</p>
-<p>This would be a good place to add pagination.</p>

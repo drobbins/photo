@@ -73,3 +73,5 @@ div.avatar img {
 #items ul {
   list-style: none;
 }
+
+img, object, embed {max-width: 100%;}
