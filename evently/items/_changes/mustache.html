@@ -9,10 +9,10 @@
         </div>
       </div>
       <p>{{message}}</p>
-			{{#atts}}
-				<p>{{name}}</p>
-				<div class="attachment"><img src="{{path}}"></div>
-			{{/atts}}
+      {{#atts}}
+        <p>{{name}}</p>
+        <div class="attachment" id="{{_id}}"><img src="{{path}}"></div>
+      {{/atts}}
       <div style="clear:left;"></div>
     </li>
   {{/items}}

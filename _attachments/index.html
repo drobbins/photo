@@ -3,28 +3,29 @@
   <head>
     <title>Pathology Photo App</title>
     <link rel="stylesheet" href="style/main.css" type="text/css">
-		<!link rel="stylesheet" href="style/columnal/columnal.css" type="text/css">
-		<!link rel="stylesheet" href="style/columnal/custom.css" type="text/css">
-		<!link rel="stylesheet" href="style/columnal/build.css" type="text/css">
+    <link rel="stylesheet" href="style/blueprint/screen.css" type="text/css" media="screen, projection">
+    <link rel="stylesheet" href="style/blueprint/print.css" type="text/css" media="print">
+    <!--[if lt IE 8]>
+      <link rel="stylesheet" href="style/blueprint/ie.css" type="text/css" media="screen, projection">
+    <![endif]-->
   </head>
   <body class="container">
-		<div class="row">
-    	<div id="account"></div>
+      <div id="account" class="span-24"></div>
 
-	    <h1>Pathology Photo Sharing</h1>
-
-	    <div id="profile" class="col_2"></div>
-	    <div id="items" class="col_8"></div>
-
-	    <div id="sidebar" class="col_2 last">
-	      <p>Edit welcome message.</p>
-	      <p>Ideas: You could easily turn this into a photo sharing app, or a grocery list, or a chat room.</p>
-	    </div>
-		</div>
+      <div class="span-24"><h1>Pathology Photo Sharing</h1></div>
+      <hr />
+      <div id="profile" class="span-24"></div>
+      <hr />
+      <div id="items" class="span-16 colborder"></div>
+      <div id="sidebar" class="span-7 last">
+        <p>Edit welcome message.</p>
+        <p>Ideas: You could easily turn this into a photo sharing app, or a grocery list, or a chat room.</p>
+      </div>
+    </div>
   </body>
   <script src="vendor/couchapp/loader.js"></script>
-	<script src="loader.js"></script>
-	<script src="/_utils/script/jquery.form.js"></script>
+  <script src="loader.js"></script>
+  <script src="/_utils/script/jquery.form.js"></script>
   <script type="text/javascript" charset="utf-8">
     $.couch.app(function(app) {
       $("#account").evently("account", app);
